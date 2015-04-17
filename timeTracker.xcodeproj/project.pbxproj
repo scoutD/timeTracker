@@ -14,6 +14,8 @@
 		CE0D557A1ADEFED0007AB36E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE0D55791ADEFED0007AB36E /* Images.xcassets */; };
 		CE0D557D1ADEFED0007AB36E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE0D557B1ADEFED0007AB36E /* LaunchScreen.xib */; };
 		CE0D55891ADEFED1007AB36E /* timeTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0D55881ADEFED1007AB36E /* timeTrackerTests.swift */; };
+		CE5CF1221AE16CE700295A4B /* ActivitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5CF1211AE16CE700295A4B /* ActivitiesViewController.swift */; };
+		CE5CF1241AE16DC800295A4B /* Activities.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5CF1231AE16DC800295A4B /* Activities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		CE0D55821ADEFED0007AB36E /* timeTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = timeTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE0D55871ADEFED1007AB36E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE0D55881ADEFED1007AB36E /* timeTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timeTrackerTests.swift; sourceTree = "<group>"; };
+		CE5CF1211AE16CE700295A4B /* ActivitiesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivitiesViewController.swift; sourceTree = "<group>"; };
+		CE5CF1231AE16DC800295A4B /* Activities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,8 @@
 				CE0D55721ADEFED0007AB36E /* FirstViewController.swift */,
 				CE0D55741ADEFED0007AB36E /* SecondViewController.swift */,
 				CE0D55761ADEFED0007AB36E /* Main.storyboard */,
+				CE5CF1231AE16DC800295A4B /* Activities.swift */,
+				CE5CF1211AE16CE700295A4B /* ActivitiesViewController.swift */,
 				CE0D55791ADEFED0007AB36E /* Images.xcassets */,
 				CE0D557B1ADEFED0007AB36E /* LaunchScreen.xib */,
 				CE0D556E1ADEFED0007AB36E /* Supporting Files */,
@@ -216,7 +222,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE0D55751ADEFED0007AB36E /* SecondViewController.swift in Sources */,
+				CE5CF1221AE16CE700295A4B /* ActivitiesViewController.swift in Sources */,
 				CE0D55711ADEFED0007AB36E /* AppDelegate.swift in Sources */,
+				CE5CF1241AE16DC800295A4B /* Activities.swift in Sources */,
 				CE0D55731ADEFED0007AB36E /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -409,6 +417,7 @@
 				CE0D558E1ADEFED1007AB36E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE0D558F1ADEFED1007AB36E /* Build configuration list for PBXNativeTarget "timeTrackerTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +426,7 @@
 				CE0D55911ADEFED1007AB36E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
