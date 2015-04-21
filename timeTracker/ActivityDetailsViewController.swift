@@ -1,24 +1,16 @@
 //
-//  ActivitiesViewController.swift
+//  ActivityDetailsViewController.swift
 //  timeTracker
 //
-//  Created by Susannah on 4/17/15.
+//  Created by Susannah on 4/21/15.
 //  Copyright (c) 2015 Susannah. All rights reserved.
 //
 
 import UIKit
 
-class ActivitiesViewController: UITableViewController {
+class ActivityDetailsViewController: UITableViewController {
+    @IBOutlet weak var nameTextField: UITextField!
 
-    @IBAction func cancelToActivitiesViewController(segue:UIStoryboardSegue) {
-        
-    }
-    
-    @IBAction func saveActivityDetail(segue:UIStoryboardSegue) {
-        
-    }
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
