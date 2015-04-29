@@ -8,16 +8,28 @@
         <scene sceneID="fqR-nR-9ub">
             <objects>
                 <tableViewController id="zhN-KX-HTH" customClass="ActivitiesViewController" customModule="timeTracker" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="lBH-6i-RNg">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="55" sectionHeaderHeight="22" sectionFooterHeight="22" id="lBH-6i-RNg">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="GMO-ye-pg9">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ActivityCell" rowHeight="55" id="GMO-ye-pg9" customClass="ActivityCellTableViewCell" customModule="timeTracker" customModuleProvider="target">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GMO-ye-pg9" id="2c9-dl-mc1">
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="100" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="RUd-Sz-9zq">
+                                            <rect key="frame" x="8" y="0.0" width="190" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="nameLabel" destination="RUd-Sz-9zq" id="Z9a-Iw-Q9F"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -62,7 +74,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="TXm-OU-WyT">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="TXm-OU-WyT">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TXm-OU-WyT" id="nxP-1n-KcY">
                                             <autoresizingMask key="autoresizingMask"/>
@@ -83,14 +95,10 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="YtK-jg-Bq2">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="LVn-3m-L8z">
-                            <connections>
-                                <segue destination="YH0-vc-OFE" kind="unwind" unwindAction="cancelToActivitiesViewController:" id="2LT-Jh-M4Z"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="LVn-3m-L8z"/>
                         <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="3oL-yE-eim">
                             <connections>
-                                <segue destination="YH0-vc-OFE" kind="unwind" unwindAction="saveActivityDetail:" id="LOR-Kc-5Pp"/>
+                                <segue destination="YH0-vc-OFE" kind="unwind" identifier="saveActivityDetail" unwindAction="saveActivityDetail:" id="ZfV-4L-V9G"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

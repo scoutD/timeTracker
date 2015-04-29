@@ -15,6 +15,8 @@
 		CE0D557D1ADEFED0007AB36E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE0D557B1ADEFED0007AB36E /* LaunchScreen.xib */; };
 		CE0D55891ADEFED1007AB36E /* timeTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0D55881ADEFED1007AB36E /* timeTrackerTests.swift */; };
 		CE1F77771AE6A56100468DE3 /* ActivityDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1F77761AE6A56100468DE3 /* ActivityDetailsViewController.swift */; };
+		CE1F77791AE83C8F00468DE3 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1F77781AE83C8F00468DE3 /* SampleData.swift */; };
+		CE1F777B1AE9736D00468DE3 /* ActivityCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1F777A1AE9736D00468DE3 /* ActivityCellTableViewCell.swift */; };
 		CE5CF1221AE16CE700295A4B /* ActivitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5CF1211AE16CE700295A4B /* ActivitiesViewController.swift */; };
 		CE5CF1241AE16DC800295A4B /* Activities.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5CF1231AE16DC800295A4B /* Activities.swift */; };
 /* End PBXBuildFile section */
@@ -42,6 +44,8 @@
 		CE0D55871ADEFED1007AB36E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE0D55881ADEFED1007AB36E /* timeTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timeTrackerTests.swift; sourceTree = "<group>"; };
 		CE1F77761AE6A56100468DE3 /* ActivityDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityDetailsViewController.swift; sourceTree = "<group>"; };
+		CE1F77781AE83C8F00468DE3 /* SampleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
+		CE1F777A1AE9736D00468DE3 /* ActivityCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityCellTableViewCell.swift; sourceTree = "<group>"; };
 		CE5CF1211AE16CE700295A4B /* ActivitiesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivitiesViewController.swift; sourceTree = "<group>"; };
 		CE5CF1231AE16DC800295A4B /* Activities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -91,7 +95,9 @@
 				CE0D55761ADEFED0007AB36E /* Main.storyboard */,
 				CE1F77761AE6A56100468DE3 /* ActivityDetailsViewController.swift */,
 				CE5CF1231AE16DC800295A4B /* Activities.swift */,
+				CE1F777A1AE9736D00468DE3 /* ActivityCellTableViewCell.swift */,
 				CE5CF1211AE16CE700295A4B /* ActivitiesViewController.swift */,
+				CE1F77781AE83C8F00468DE3 /* SampleData.swift */,
 				CE0D55791ADEFED0007AB36E /* Images.xcassets */,
 				CE0D557B1ADEFED0007AB36E /* LaunchScreen.xib */,
 				CE0D556E1ADEFED0007AB36E /* Supporting Files */,
@@ -225,6 +231,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE0D55751ADEFED0007AB36E /* SecondViewController.swift in Sources */,
+				CE1F77791AE83C8F00468DE3 /* SampleData.swift in Sources */,
+				CE1F777B1AE9736D00468DE3 /* ActivityCellTableViewCell.swift in Sources */,
 				CE5CF1221AE16CE700295A4B /* ActivitiesViewController.swift in Sources */,
 				CE0D55711ADEFED0007AB36E /* AppDelegate.swift in Sources */,
 				CE5CF1241AE16DC800295A4B /* Activities.swift in Sources */,
