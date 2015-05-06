@@ -12,6 +12,7 @@ class ActivityDetailsViewController: UITableViewController {
     @IBOutlet weak var nameTextField: UITextField!
     
     var activity:Activity!
+    var activityName: String!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,7 +38,9 @@ class ActivityDetailsViewController: UITableViewController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "SaveActivityDetail" {
+        if segue.identifier == "saveActivityDetail" {
+            let textField = self.nameTextField
+            let text = textField.text
             activity = Activity(name: self.nameTextField.text)
         }
     }
