@@ -12,9 +12,11 @@ class SecondViewController: UIViewController {
     
     @IBOutlet var timerLabel: UILabel!
     
-    var seconds = 0
     var timer = NSTimer()
-    
+    var hours = 0
+    var totalSeconds = 0
+    var seconds = 0
+    var minutes = 0
     
     @IBAction func buttonPressed() {
         NSLog("Button Pressed")
@@ -35,16 +37,18 @@ class SecondViewController: UIViewController {
     
     
     func setupGame()  {
-        seconds = 30
-        timerLabel.text = "Time: \(seconds)"
+        totalSeconds = 90
+        minutes = totalSeconds / 60
+        seconds = totalSeconds % 60
+        timerLabel.text = "Time: \(minutes):\(seconds)"
         timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: Selector("subtractTime"), userInfo: nil, repeats: true)
     }
     
     func subtractTime() {
-        seconds--
-        timerLabel.text = "Time: \(seconds)"
+        totalSeconds--
+        timerLabel.text = "Time: \(minutes):\(seconds)"
         
-        if(seconds == 0)  {
+        if(seconds == 0) && (minutes == 0) {
             timer.invalidate()
             let alert = UIAlertController(title: "Time is up!",
                 message: "Congradulations on completing your #activity",
