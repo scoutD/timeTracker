@@ -70,9 +70,6 @@
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <textInputTraits key="textInputTraits"/>
-                                                    <connections>
-                                                        <action selector="setActivityName:" destination="z1V-Lu-atP" eventType="editingDidEnd" id="fak-qj-jrl"/>
-                                                    </connections>
                                                 </textField>
                                             </subviews>
                                         </tableViewCellContentView>

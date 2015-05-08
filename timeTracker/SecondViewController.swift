@@ -46,7 +46,15 @@ class SecondViewController: UIViewController {
     
     func subtractTime() {
         totalSeconds--
-        timerLabel.text = "Time: \(minutes):\(seconds)"
+        minutes = totalSeconds / 60
+        seconds = totalSeconds % 60
+        
+        if (seconds < 10) {
+            timerLabel.text = "Time remaining: \(minutes):0\(seconds)"
+        }
+        else {
+            timerLabel.text = "Time remaining: \(minutes):\(seconds)"
+        }
         
         if(seconds == 0) && (minutes == 0) {
             timer.invalidate()
