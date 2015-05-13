@@ -47,7 +47,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S8U-vi-u2M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="927" y="-300"/>
+            <point key="canvasLocation" x="793" y="-300"/>
         </scene>
         <!--Add Activity-->
         <scene sceneID="mWs-jf-S1i">
@@ -109,7 +109,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M9C-1v-ArE" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="YH0-vc-OFE" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1887" y="-300"/>
+            <point key="canvasLocation" x="1647" y="-300"/>
         </scene>
         <!--My TimeMap ViewController-->
         <scene sceneID="wg7-f3-ORb">
@@ -211,7 +211,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NgS-kH-L5Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1355" y="-300"/>
+            <point key="canvasLocation" x="1209" y="-300"/>
         </scene>
     </scenes>
     <resources>
