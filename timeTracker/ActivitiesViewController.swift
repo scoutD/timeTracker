@@ -10,11 +10,22 @@ import UIKit
 
 class ActivitiesViewController: UITableViewController {
 
+    var activities: [Activity] = activitiesData
+    
     @IBAction func cancelToActivitiesViewController(segue:UIStoryboardSegue) {
         
     }
     
     @IBAction func saveActivityDetail(segue:UIStoryboardSegue) {
+        if let activityDetailsViewController = segue.sourceViewController as? ActivityDetailsViewController {
+            
+            //add the new activity to the activities array
+            activities.append(activityDetailsViewController.activity)
+            
+            //update the tableView
+            let indexPath = NSIndexPath(forRow: activities.count-1, inSection: 0)
+            tableView.insertRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
+        }
         
     }
     
@@ -35,29 +46,27 @@ class ActivitiesViewController: UITableViewController {
     }
 
     // MARK: - Table view data source
-
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // #warning Potentially incomplete method implementation.
-        // Return the number of sections.
-        return 0
+        return 1
     }
-
+    
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete method implementation.
-        // Return the number of rows in the section.
-        return 0
+        return activities.count
     }
 
-    /*
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as UITableViewCell
 
-        // Configure the cell...
-
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) ->UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("ActivityCell", forIndexPath: indexPath) as UITableViewCell
+        let activity = activities[indexPath.row] as Activity
+        
+        if let nameLabel = cell.viewWithTag(100) as? UILabel {
+            nameLabel.text = activity.name
+        }
+        
         return cell
-    }
-    */
 
+    }
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
@@ -102,5 +111,4 @@ class ActivitiesViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
 }
