@@ -19,6 +19,7 @@
 		CE1F777B1AE9736D00468DE3 /* ActivityCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1F777A1AE9736D00468DE3 /* ActivityCellTableViewCell.swift */; };
 		CE5CF1221AE16CE700295A4B /* ActivitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5CF1211AE16CE700295A4B /* ActivitiesViewController.swift */; };
 		CE5CF1241AE16DC800295A4B /* Activities.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5CF1231AE16DC800295A4B /* Activities.swift */; };
+		CE6E2A881B0522ED00E031E9 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6E2A871B0522ED00E031E9 /* TimerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		CE1F777A1AE9736D00468DE3 /* ActivityCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityCellTableViewCell.swift; sourceTree = "<group>"; };
 		CE5CF1211AE16CE700295A4B /* ActivitiesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivitiesViewController.swift; sourceTree = "<group>"; };
 		CE5CF1231AE16DC800295A4B /* Activities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activities.swift; sourceTree = "<group>"; };
+		CE6E2A871B0522ED00E031E9 /* TimerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 				CE0D55721ADEFED0007AB36E /* FirstViewController.swift */,
 				CE0D55741ADEFED0007AB36E /* SecondViewController.swift */,
 				CE0D55761ADEFED0007AB36E /* Main.storyboard */,
+				CE6E2A871B0522ED00E031E9 /* TimerViewController.swift */,
 				CE1F77761AE6A56100468DE3 /* ActivityDetailsViewController.swift */,
 				CE5CF1231AE16DC800295A4B /* Activities.swift */,
 				CE1F777A1AE9736D00468DE3 /* ActivityCellTableViewCell.swift */,
@@ -231,6 +234,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE0D55751ADEFED0007AB36E /* SecondViewController.swift in Sources */,
+				CE6E2A881B0522ED00E031E9 /* TimerViewController.swift in Sources */,
 				CE1F77791AE83C8F00468DE3 /* SampleData.swift in Sources */,
 				CE1F777B1AE9736D00468DE3 /* ActivityCellTableViewCell.swift in Sources */,
 				CE5CF1221AE16CE700295A4B /* ActivitiesViewController.swift in Sources */,
