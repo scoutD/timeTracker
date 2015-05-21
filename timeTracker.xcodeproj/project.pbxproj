@@ -20,6 +20,7 @@
 		CE5CF1221AE16CE700295A4B /* ActivitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5CF1211AE16CE700295A4B /* ActivitiesViewController.swift */; };
 		CE5CF1241AE16DC800295A4B /* Activities.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5CF1231AE16DC800295A4B /* Activities.swift */; };
 		CE6E2A881B0522ED00E031E9 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6E2A871B0522ED00E031E9 /* TimerViewController.swift */; };
+		CEB755D71B06540E004F01E8 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB755D61B06540E004F01E8 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		CE5CF1211AE16CE700295A4B /* ActivitiesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivitiesViewController.swift; sourceTree = "<group>"; };
 		CE5CF1231AE16DC800295A4B /* Activities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activities.swift; sourceTree = "<group>"; };
 		CE6E2A871B0522ED00E031E9 /* TimerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
+		CEB755D61B06540E004F01E8 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 				CE0D55721ADEFED0007AB36E /* FirstViewController.swift */,
 				CE0D55741ADEFED0007AB36E /* SecondViewController.swift */,
 				CE0D55761ADEFED0007AB36E /* Main.storyboard */,
+				CEB755D61B06540E004F01E8 /* SettingsViewController.swift */,
 				CE6E2A871B0522ED00E031E9 /* TimerViewController.swift */,
 				CE1F77761AE6A56100468DE3 /* ActivityDetailsViewController.swift */,
 				CE5CF1231AE16DC800295A4B /* Activities.swift */,
@@ -236,6 +239,7 @@
 				CE0D55751ADEFED0007AB36E /* SecondViewController.swift in Sources */,
 				CE6E2A881B0522ED00E031E9 /* TimerViewController.swift in Sources */,
 				CE1F77791AE83C8F00468DE3 /* SampleData.swift in Sources */,
+				CEB755D71B06540E004F01E8 /* SettingsViewController.swift in Sources */,
 				CE1F777B1AE9736D00468DE3 /* ActivityCellTableViewCell.swift in Sources */,
 				CE5CF1221AE16CE700295A4B /* ActivitiesViewController.swift in Sources */,
 				CE0D55711ADEFED0007AB36E /* AppDelegate.swift in Sources */,

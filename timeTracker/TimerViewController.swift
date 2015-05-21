@@ -10,6 +10,7 @@ import UIKit
 
 class TimerViewController: UIViewController {
 
+    
     @IBOutlet var timerLabel: UILabel!
     
     var timer = NSTimer()
@@ -24,7 +25,7 @@ class TimerViewController: UIViewController {
             message: "Congratulations! You completed #activity with time to spare!",
             preferredStyle: UIAlertControllerStyle.Alert)
         alert.addAction(UIAlertAction(title: "Activity Complete", style: UIAlertActionStyle.Default, handler: {
-            action in self.setupTime()
+            action in self.performSegueWithIdentifier("dismissToActivitiesScreen", sender: self)
         }))
         presentViewController(alert, animated: true, completion:nil)
     }
@@ -40,7 +41,6 @@ class TimerViewController: UIViewController {
         // Dispose of any resources that can be recreated.
         
     }
-    
     
     
     func setupTime()  {
@@ -74,7 +74,7 @@ class TimerViewController: UIViewController {
                 message: "Congratulations on completing your #activity",
                 preferredStyle: UIAlertControllerStyle.Alert)
             alert.addAction(UIAlertAction(title: "Activity Complete", style: UIAlertActionStyle.Default, handler: {
-                action in self.setupTime()
+                action in self.performSegueWithIdentifier("dismissToActivitiesScreen", sender: self)
             }))
             presentViewController(alert, animated: true, completion:nil)
         }
